@@ -1,0 +1,200 @@
+@font-face {
+  font-family: fontText;
+  src: url(../fonts/OpenSans/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: fontTitleRegular;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: fontTitleSemibold;
+  src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgb(103, 75, 175);
+  background-image: url(../img/bg-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1050px) {
+  body {
+    height: auto;
+    background-image: url(../img/bg-mobile.svg);
+    background-size: cover;
+    background-position: top;
+  }
+}
+
+main .header {
+  height: 100px;
+  padding-top: 52px;
+  padding-left: 75px;
+}
+@media screen and (max-width: 1050px) {
+  main .header {
+    height: 80px;
+    padding-top: 40px;
+    padding-left: 35px;
+  }
+}
+main .header .logo {
+  height: 52px;
+}
+@media screen and (max-width: 1050px) {
+  main .header .logo {
+    height: 38px;
+  }
+}
+main .main-container {
+  max-width: 1440px;
+  height: auto;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  padding: 95px 80px 0px;
+}
+@media screen and (max-width: 1050px) {
+  main .main-container {
+    grid-template-columns: 1fr;
+    padding: 70px 40px;
+    gap: 70px;
+  }
+}
+main .main-container .left-part {
+  text-align: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+main .main-container .left-part img {
+  max-width: 100%;
+  height: auto;
+}
+main .main-container .right-part {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 1050px) {
+  main .main-container .right-part {
+    padding: 0;
+    text-align: center;
+  }
+}
+main .main-container .right-part h1 {
+  font-family: fontTitleSemibold;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 45px;
+}
+@media screen and (max-width: 1050px) {
+  main .main-container .right-part h1 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+}
+main .main-container .right-part p {
+  font-family: fontText;
+  font-size: 1.15rem;
+  color: white;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1050px) {
+  main .main-container .right-part p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+}
+main .main-container .right-part .btn {
+  position: relative;
+  cursor: pointer;
+  height: 56px;
+  width: 200px;
+  border: none;
+  border-radius: 50px;
+  font-family: fontTitleRegular;
+  font-size: 1.2rem;
+  color: rgb(103, 75, 175);
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+@media screen and (max-width: 1050px) {
+  main .main-container .right-part .btn {
+    height: 45px;
+    border-radius: 23px;
+    font-size: 0.9rem;
+  }
+}
+main .main-container .right-part .btn:hover {
+  background-color: rgb(232, 130, 232);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  color: white;
+}
+main .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  gap: 16px;
+  padding-right: 80px;
+  padding-top: 20px;
+}
+@media screen and (max-width: 1050px) {
+  main .socials {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+}
+main .socials i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+@media screen and (max-width: 1050px) {
+  main .socials i {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+    font-size: 1rem;
+  }
+}
+main .socials i:hover {
+  border: 1px solid rgb(232, 130, 232);
+  color: rgb(232, 130, 232);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}/*# sourceMappingURL=index.css.map */

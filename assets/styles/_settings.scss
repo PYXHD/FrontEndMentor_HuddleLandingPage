@@ -1,0 +1,42 @@
+@font-face {
+  font-family: fontText;
+  src: url(../fonts/OpenSans/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: fontTitleRegular;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: fontTitleSemibold;
+  src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+$fontText: fontText;
+$fontTitleRegular: fontTitleRegular;
+$fontTitleSemibold: fontTitleSemibold;
+
+$violet: rgb(103, 75, 175);
+$softMagenta: rgb(232, 130, 232);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: $violet;
+  background-image: url(../img/bg-desktop.svg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 1050px) {
+    height: auto;
+    background-image: url(../img/bg-mobile.svg);
+    background-size: cover;
+    background-position: top;
+  }
+}

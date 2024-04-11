@@ -1,0 +1,147 @@
+main {
+  .header {
+    height: 100px;
+    padding-top: 52px;
+    padding-left: 75px;
+
+    @media screen and (max-width: 1050px) {
+      height: 80px;
+      padding-top: 40px;
+      padding-left: 35px;
+    }
+
+    .logo {
+      height: 52px;
+
+      @media screen and (max-width: 1050px) {
+        height: 38px;
+      }
+    }
+  }
+
+  .main-container {
+    max-width: 1440px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    padding: 95px 80px 0px;
+
+    @media screen and (max-width: 1050px) {
+      grid-template-columns: 1fr;
+      padding: 70px 40px;
+      gap: 70px;
+    }
+
+    .left-part {
+      text-align: center;
+      align-self: center;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .right-part {
+      padding-top: 50px;
+      padding-left: 50px;
+      padding-bottom: 50px;
+
+      @media screen and (max-width: 1050px) {
+        padding: 0;
+        text-align: center;
+      }
+
+      h1 {
+        font-family: $fontTitleSemibold;
+        font-size: 2.5rem;
+        color: white;
+        margin-bottom: 45px;
+
+        @media screen and (max-width: 1050px) {
+          font-size: 1.6rem;
+          margin-bottom: 15px;
+        }
+      }
+
+      p {
+        font-family: $fontText;
+        font-size: 1.15rem;
+        color: white;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 1050px) {
+          font-size: 1rem;
+          margin-bottom: 30px;
+        }
+      }
+
+      .btn {
+        position: relative;
+        cursor: pointer;
+        height: 56px;
+        width: 200px;
+        border: none;
+        border-radius: 50px;
+        font-family: $fontTitleRegular;
+        font-size: 1.2rem;
+        color: $violet;
+        transition: 0.2s ease;
+
+        @media screen and (max-width: 1050px) {
+          height: 45px;
+          border-radius: 23px;
+          font-size: 0.9rem;
+        }
+
+        &:hover {
+          background-color: $softMagenta;
+          transform: scale(1.05);
+          color: white;
+        }
+      }
+    }
+  }
+
+  .socials {
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+    padding-right: 80px;
+    padding-top: 20px;
+
+    @media screen and (max-width: 1050px) {
+      justify-content: center;
+      padding: 0;
+      margin-bottom: 40px;
+    }
+
+    i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid white;
+      font-size: 1.2rem;
+      color: white;
+      cursor: pointer;
+      transition: 0.2s ease;
+
+      @media screen and (max-width: 1050px) {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 1px solid white;
+        font-size: 1rem;
+      }
+
+      &:hover {
+        border: 1px solid $softMagenta;
+        color: $softMagenta;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
